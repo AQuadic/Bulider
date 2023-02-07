@@ -10,6 +10,7 @@ Frontend Made by [AQuadic](https://aquadic.com)
 
 - [AQuadic](https://aquadic.com)
 - [Live Site](https://aquadic.github.io/Bulider)
+- [Figma](https://www.figma.com/file/cGHHiWAujDg7TtZarCjuxq/Landing-Page-Bulider)
 
 ## Installation
 

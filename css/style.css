@@ -2,32 +2,32 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "DM Sans2";
+  font-family: "Inter2";
 }
 @font-face {
-  font-family: "DM Sans";
+  font-family: "Inter";
   src: url("../fonts/Inter-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "DM Sans2";
+  font-family: "Inter2";
   src: url("../fonts/Inter-Medium.ttf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "DM Sans3";
+  font-family: "Inter3";
   src: url("../fonts/Inter-Regular.ttf");
   font-weight: 200;
   font-style: normal;
 }
 
 h1 ,.btn_page,h2{
-  font-family: "DM Sans";
+  font-family: "Inter";
 }
 p{
-  font-family: "DM Sans3";
+  font-family: "Inter3";
 }
 :root{
   --main_color :#7313FC
@@ -181,6 +181,12 @@ color: #FFFFFF;
   }
 /*end navbar*/
 /*public*/
+.head_title{
+  font-size: 26px;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 38px;
+}
 .flex1{
   display: flex;
 flex-direction: column;
@@ -325,4 +331,306 @@ header .header_about button{
   width: fit-content;
   
   margin: auto;
+}
+/*about*/
+.about{
+  margin: 100px auto;
+}
+.about .part1{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 50px;
+
+margin-bottom: 100px;
+position: relative;
+}
+.about .part1 img{
+  max-width: 100%;
+}
+.part1 .img_about {
+  position: relative;
+  padding: 0px 0px 40px 40px;
+}
+.about .part1  .img_about::before {
+  position: absolute;
+  content: "";
+  height: calc(100% - 100px);
+  width: 74px;
+  right: -16px;
+  top: 46%;
+  transform: translateY(-50%);
+  background-color: #092532;
+  z-index: -1;
+}
+.about .part1  .img_about::after{
+position: absolute;
+content: "";
+}
+.point {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  width: 38%;
+}
+.about .part1  .about_info{
+  max-width: 560px;
+}
+.about .part1  .about_info h2{
+  font-size: 26px;
+line-height: 34px;
+}
+.about  .part1 .about_info p{
+  font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+}
+.about .part2 {
+  display: flex;
+}
+.about .part2 .year{
+  width: 626px;
+  height: 306px;
+  max-width: 100%;
+  max-height: 100%;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  background: #52879D;
+border-radius: 10px;
+}
+.about .part2 .year h2{
+  font-weight: 700;
+font-size: 48px;
+line-height: 62px;
+}
+.about .part2 .counts{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:0px 16px;
+  max-width: 550px;
+  margin-left: -50px  ;
+}
+.about .part2 .counts .count{
+  
+  width: 266px;
+max-width: 100%;
+height: 114px;
+background: #FBFBFB;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.about .part2 .counts .count h3{
+  font-weight: 500;
+font-size: 40px;
+line-height: 52px;
+margin: 0;
+}
+.about .part2 .counts .count p{
+  font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+
+color: #555555;
+}
+@media(max-width:992px){
+  .part1 .img_about {
+   
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    
+}
+.about .part2 {
+  gap: 16px;
+   flex-direction: column;
+}
+.about .part2 .counts {
+  gap:16px;
+  margin: auto;
+}
+.about .part2 .year{
+  width: 306px;
+  height: 70px;
+  flex-direction: row;
+  margin: auto;
+  max-width: 80%;
+}
+.about .part2 .year h2 {
+ 
+  font-size: 34px;
+  
+  margin: 0;
+}
+}
+@media(max-width:768px){
+  .about .part2 .counts .count{
+    width: 98%;
+  }
+  
+}
+/*portfolio*/
+.portfolio{
+
+}
+
+.portfolio .all_portfolio{
+  grid-row-gap: 36px;
+}
+.portfolio .all_portfolio .part{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  
+}
+.portfolio .all_portfolio .part .img_portfolio{
+  width: 100%;
+padding: 34px 42px;
+background: #FBFBFB;
+border-radius: 10px;
+}
+
+.portfolio .all_portfolio .part .img_portfolio img{
+  width: 100%;
+  object-fit: contain;
+}
+.portfolio .all_portfolio .part h3{
+  margin: 0;
+  font-size: 20px;
+line-height: 26px;
+}
+.portfolio .all_portfolio .part p{
+  font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+max-width: 390px;
+margin: auto;
+}
+@media(max-width:992px){
+  .portfolio .all_portfolio .part .img_portfolio{
+   
+  padding: 20px 20px;
+ 
+  }
+  
+}
+/*pricing*/
+.pricing{
+margin: 100px auto;
+}
+.pricing .pricing_parts{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pricing .pricing_parts .part{
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+  min-width: 350px;
+  width: 100%;
+  text-align: center;
+  background: #FBFBFB;
+border-radius: 20px;
+padding-bottom: 60px;
+}
+.pricing .pricing_parts .part h3 {
+  font-size: 24px;
+  line-height: 31px;
+  color: #FFFFFF;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #52879D;
+  transition: 0.5s;
+}
+.pricing .pricing_parts .part:hover h3 {
+  background: #2b4854;
+}
+.pricing .pricing_parts .part h4{
+  font-size: 80px;
+line-height: 104px;
+text-align: center;
+margin-bottom: 16px;
+margin-top: 40px;
+}
+.pricing .pricing_parts .part h4 span {
+  font-size: 36px;
+  font-weight: bold;
+}
+.pricing .pricing_parts .part ul {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 76px;
+}
+.pricing .pricing_parts .part ul li {
+  list-style: disc;
+  font-size: 16px;
+line-height: 30px;
+}
+.pricing .pricing_parts .part button{
+ 
+}
+.btn_buy{
+  background: #092532;
+border-radius: 10px;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height */
+max-width: 239px;
+width: 100%;
+height: 52px;
+transition: 0.3s;
+color: #FFFFFF;
+}
+.btn_buy:hover{
+  background-color: white;
+  color:#092532 ;
+  border: 2px solid #092532;
+}
+/*question*/
+.question{
+
+}
+.question h2{
+ text-align: start;
+}
+
+
+
+
+
+.accordion-item{
+ border: 1px solid #092532;
+border-radius: 10px;
+  margin-bottom: 20px;
+  border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.accordion-button{
+  background-color: transparent;
+}
+
+
+
+
+
+.accordion-button::after{
+  margin-right: 0;
 }

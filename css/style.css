@@ -610,6 +610,34 @@ margin: auto;
   }
   
 }
+/*Testmonials*/
+.testmonials{
+  background: #092532;
+  padding: 86px 0px 26px;
+  max-width: 1440px;
+  margin: auto;
+  overflow: hidden;
+}
+.testmonials .testmonials_about{
+color: white;
+}
+.testmonials .testmonials_about h2{
+  font-size: 20px;
+line-height: 26px;
+
+}
+.testmonials .testmonials_about h3{
+  font-size: 40px;
+line-height: 52px;
+}
+.testmonials .testmonials_about p{
+  font-size: 16px;
+line-height: 30px;
+/* or 188% */
+
+
+color: #FFFFFF;
+}
 /*pricing*/
 .pricing{
 margin: 100px auto;

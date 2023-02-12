@@ -22,6 +22,8 @@
       integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -219,6 +221,29 @@
   <h3>Project Name</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\</p>
 </div>
+  </div>
+</section>
+<section class="testmonials">
+  <div class="testmonials_about container">
+    <h2>Testmonials</h2>
+    <h3>Some reviews from our awesome Clients </h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\</p>
+  </div>
+  <div class="ts">
+    <div class="owl-carousel owl-theme">
+      <div class="item"><h4>ddscdsd1</h4></div>
+      <div class="item"><h4>ddscdsd2</h4></div>
+      <div class="item"><h4>ddscdsd3</h4></div>
+      <div class="item"><h4>ddscdsd4</h4></div>
+      <div class="item"><h4>ddscdsd5</h4></div>
+      <div class="item"><h4>ddscdsd6</h4></div>
+      <div class="item"><h4>ddscdsd7</h4></div>
+      <div class="item"><h4>ddscdsd8</h4></div>
+      <div class="item"><h4>ddscdsd9</h4></div>
+      <div class="item"><h4>1ddscdsd0</h4></div>
+      <div class="item"><h4>1ddscdsd1</h4></div>
+      <div class="item"><h4>1ddscdsd2</h4></div>
+  </div>
   </div>
 </section>
 <section class="pricing container">
@@ -443,8 +468,29 @@
     </div>
   </div>
    </footer>
+
+   
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  })
+     </script>
 </body>
 </html>

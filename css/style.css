@@ -494,6 +494,7 @@ color: #555555;
   gap: 40px;
   flex-wrap: wrap;
   place-content: center;
+
 }
 .services .parts .part {
   display: flex;
@@ -511,7 +512,7 @@ color: #555555;
   height: 66px;
   border-radius: 50%;
 
-
+  background-color: #467BAF;
 }
 .services .parts .part img{
   width: 30px;
@@ -524,7 +525,7 @@ line-height: 26px;
   height: 4px;
   width: 60px;
   display: block;
-
+  background-color: #467BAF;
   border-radius: 4px;
 }
 .services .parts .part p{
@@ -532,6 +533,31 @@ line-height: 26px;
 line-height: 25px;  
 max-width: 262px;
 margin-top: 4px;
+}
+@media(max-width:768px){
+  .services .parts .part {
+    
+    min-width: 230px;
+    
+  }
+  .services .parts .part p {
+   
+    max-width: 230px;
+   
+}
+}
+@media(max-width:540px){
+  .services .parts .part {
+    
+    align-items: center;
+    
+  }
+  .services .parts .part p {
+   
+   text-align: center;
+   min-width: 98%;
+   
+}
 }
 /*portfolio*/
 .portfolio{

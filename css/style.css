@@ -743,6 +743,105 @@ line-height: 26px;
 .accordion-button::after{
   margin-right: 0;
 }
+/*contact*/
+.contact{
+  background: #52879D;
+  padding: 40px 0px;
+
+}
+.contact .container {
+display: flex;
+justify-content: space-between;
+
+gap: 80px;
+}
+.contact .contact_info{
+  color: #FFFFFF;
+}
+.contact .contact_info h2{
+  font-size: 26px;
+line-height: 34px;
+margin-bottom: 30px;
+}
+.contact .contact_info ul{
+  margin-bottom: 12px;
+  padding: 0;
+}
+.contact .contact_info ul li{
+  margin-top: 20px;
+}
+.contact .contact_info ul li a{
+  display: flex;
+  align-items: flex-start;
+ gap: 10px;
+ color: white;
+}
+.contact .contact_info ul li a img{
+  
+}
+.contact .contact_info ul li a p{
+  font-size: 20px;
+line-height: 30px;
+max-width: 480px;
+}
+.contact .contact_info iframe{
+  max-width: 388px;
+  max-height: 388px;
+  width: 100%;
+  border-radius: 10px;
+}
+.contact form{
+  max-width: 460px;
+  background: #FFFFFF;
+border-radius: 30px;
+width: 100%;
+padding: 32px 28px ;
+}
+.contact form label{
+  font-size: 18px;
+line-height: 23px;  
+margin-bottom: 12px;
+}
+.contact form .form-control {
+  min-height: 50px;
+  border: 1px solid #092532;
+border-radius: 10px;
+}
+.contact form .form-control::placeholder{
+  font-size: 16px;
+line-height: 21px;
+color: #A4A4A4;
+}
+.contact form h3{
+  font-size: 24px;
+line-height: 31px;
+text-align: center;
+margin-bottom: 30px;  
+}
+.contact form .btn_buy{
+  display: block;
+  margin:30px auto;
+}
+@media (max-width:992px){
+  .contact .contact_info iframe {
+    max-width: 100%;
+    max-height: 100%;
+   
+}
+  .contact .contact_info {
+  
+    width: 100%;
+}
+  .contact .container {
+  
+    flex-wrap: wrap;
+  
+    }
+    .contact form {
+    
+      max-width: 100%;
+  }
+}
 /*media*/
 .media{
 margin: 100px auto;
@@ -847,7 +946,7 @@ footer .head p{
 line-height: 25px;
 max-width: 370px;
 }
-footer .part .contact p{
+footer .part .contact2 p{
   font-size: 16px;
 line-height: 21px;
 color: #FFFFFF;
@@ -864,12 +963,12 @@ footer .part .links a{
 footer .part .links a:hover{
   color: white;
 }
-footer .part .contact{
+footer .part .contact2{
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-footer .part .contact a{
+footer .part .contact2 a{
   display: flex;
   gap: 12px;
 direction: ltr;

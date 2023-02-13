@@ -220,6 +220,7 @@ align-items: center;
 justify-content: center;
 transition: 0.3s;
 border: none;
+font-family: 'Inter';
 }
 .btn_page1:hover{
   background: #092532;
@@ -316,6 +317,7 @@ line-height: 30px;
 text-align: center;
 color: #FFFFFF;
 max-width: 628px;
+font-family: "Inter2";
 }
 header .header_about button{
   
@@ -391,6 +393,7 @@ line-height: 34px;
   font-weight: 500;
 font-size: 20px;
 line-height: 30px;
+font-family: "Inter2";
 }
 .about .part2 {
   display: flex;
@@ -481,7 +484,9 @@ color: #555555;
   .about .part2 .counts .count{
     width: 98%;
   }
-  
+  .about .part1 .img_about::before{
+    display: none;
+  }
 }
 /*services*/
 .services{
@@ -520,6 +525,7 @@ color: #555555;
 .services .parts .part h3{
   font-size: 20px;
 line-height: 26px;
+font-family: "Inter";
 }
 .services .parts .part span{
   height: 4px;
@@ -561,7 +567,7 @@ margin-top: 4px;
 }
 /*portfolio*/
 .portfolio{
-
+margin: 100px auto;
 }
 
 .portfolio .all_portfolio{
@@ -594,6 +600,7 @@ border-radius: 10px;
   margin: 0;
   font-size: 20px;
 line-height: 26px;
+font-family: "Inter";
 }
 .portfolio .all_portfolio .part p{
   font-weight: 400;
@@ -611,24 +618,32 @@ margin: auto;
   
 }
 /*Testmonials*/
-.testmonials{
+.testmonials {
   background: #092532;
   padding: 86px 0px 26px;
   max-width: 1440px;
   margin: auto;
   overflow: hidden;
+ display: flex;
+  flex-direction: row-reverse;
+  gap: 60px;
+  align-items: center;
 }
 .testmonials .testmonials_about{
 color: white;
+max-width: 436px;
+margin-bottom: 12px;
 }
 .testmonials .testmonials_about h2{
   font-size: 20px;
 line-height: 26px;
+margin-bottom: 12px;
 
 }
 .testmonials .testmonials_about h3{
   font-size: 40px;
 line-height: 52px;
+font-family: "Inter";
 }
 .testmonials .testmonials_about p{
   font-size: 16px;
@@ -637,6 +652,86 @@ line-height: 30px;
 
 
 color: #FFFFFF;
+}
+.testmonials .ts {
+  width: 720px;
+}
+ .ts .owl-carousel{
+  
+}
+
+ .ts .owl-carousel .item{
+  padding: 70px 28px 38px;
+  background: #709ecc;
+border-radius: 20px;
+width: 430px;
+text-align: end;
+margin: auto;
+}
+
+.ts .owl-carousel .item.item_bink{
+  background: #DEACD0;
+}
+ .ts .owl-carousel .item p{
+  font-size: 20px;
+line-height: 30px;
+margin-bottom: 90px;
+}
+ .ts .owl-carousel .item h4{
+  font-size: 20px;
+line-height: 24px;
+margin-bottom: 8px;
+font-family: "Inter";
+}
+.ts .owl-carousel .item h5{
+  font-size: 16px;
+line-height: 19px;
+}
+.owl-theme .owl-nav {
+  margin-top: 28px;
+   width: 140px; 
+  height: 57px;
+  display: flex;
+  border-radius: 50%;
+  gap: 40px;
+  justify-content: space-around;
+}
+.owl-theme .owl-nav button {
+  width: 67px;
+  height: 50px;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: rgba(217, 217, 217, 0.3) !important;
+  margin: 0 !important;
+}
+@media(max-width:1200px){
+  .testmonials{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .owl-theme .owl-nav{
+    margin: 28px auto;
+  }
+  .testmonials .ts {
+    width: 100%;
+}
+}
+@media(max-width:500px){
+  .ts .owl-carousel .item{
+    padding: 40px 18px 30px;
+  width: 95%;
+ 
+  }
+  .owl-theme .owl-nav button {
+    width: 40px;
+    height: 40px;
+  }
+  .owl-theme .owl-nav button img {
+    width: 20%;
+}
 }
 /*pricing*/
 .pricing{
@@ -681,6 +776,7 @@ line-height: 104px;
 text-align: center;
 margin-bottom: 16px;
 margin-top: 40px;
+font-family: "Inter";
 }
 .pricing .pricing_parts .part h4 span {
   font-size: 36px;
@@ -695,6 +791,7 @@ margin-top: 40px;
   list-style: disc;
   font-size: 16px;
 line-height: 30px;
+font-family: "Inter3";
 }
 .pricing .pricing_parts .part button{
  
@@ -710,11 +807,20 @@ width: 100%;
 height: 52px;
 transition: 0.3s;
 color: #FFFFFF;
+font-family: "Inter";
 }
 .btn_buy:hover{
   background-color: white;
   color:#092532 ;
   border: 2px solid #092532;
+}
+@media(max-width:400px){
+  .pricing .pricing_parts .part{
+   
+    min-width: 100%;
+    width: 100%;
+   
+  }
 }
 /*question*/
 .question{
@@ -845,6 +951,7 @@ color: #A4A4A4;
 line-height: 31px;
 text-align: center;
 margin-bottom: 30px;  
+font-family: "Inter";
 }
 .contact form .btn_buy{
   display: block;
@@ -960,6 +1067,7 @@ line-height: 44px;
 margin-bottom: 30px;
 color: white;
 display: block;
+font-family: "Inter";
 }
 footer  h1 a:hover{
 color: white;

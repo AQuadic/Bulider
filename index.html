@@ -231,18 +231,38 @@
   </div>
   <div class="ts">
     <div class="owl-carousel owl-theme">
-      <div class="item"><h4>ddscdsd1</h4></div>
-      <div class="item"><h4>ddscdsd2</h4></div>
-      <div class="item"><h4>ddscdsd3</h4></div>
-      <div class="item"><h4>ddscdsd4</h4></div>
-      <div class="item"><h4>ddscdsd5</h4></div>
-      <div class="item"><h4>ddscdsd6</h4></div>
-      <div class="item"><h4>ddscdsd7</h4></div>
-      <div class="item"><h4>ddscdsd8</h4></div>
-      <div class="item"><h4>ddscdsd9</h4></div>
-      <div class="item"><h4>1ddscdsd0</h4></div>
-      <div class="item"><h4>1ddscdsd1</h4></div>
-      <div class="item"><h4>1ddscdsd2</h4></div>
+      <div class="item">
+        <p>00 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\</p>
+
+        <h4>Muhammed Ahmed</h4>
+        <h5>CEO </h5>
+      </div>
+      <div class="item item_bink">
+        <p>11 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\</p>
+
+        <h4>Muhammed Ahmed</h4>
+        <h5>CEO </h5>
+      </div>
+      <div class="item">
+        <p>22 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\</p>
+
+        <h4>Muhammed Ahmed</h4>
+        <h5>CEO </h5>
+      </div>
+      <div class="item item_bink">
+        <p>33 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\</p>
+
+        <h4>Muhammed Ahmed</h4>
+        <h5>CEO </h5>
+      </div>
+      <div class="item">
+        <p>44 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\</p>
+
+        <h4>Muhammed Ahmed</h4>
+        <h5>CEO </h5>
+      </div>
+    
+     
   </div>
   </div>
 </section>
@@ -476,19 +496,32 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script>
       $('.owl-carousel').owlCarousel({
-      loop:true,
+      navText: ['  <img src="./images/right.webp" alt=""/>','   <img src="./images/left.webp" alt=""/> '],
+      loop:false,
+      dots:false,
+      rtl:true,
       margin:10,
       nav:true,
+      center:false,
+      responsiveClass:true,
       responsive:{
           0:{
-              items:1
+              items:1,
+              center:false,
           },
-          600:{
-              items:3
+          768:{
+            items:1.7
+          
           },
-          1000:{
-              items:5
-          }
+          992:{
+            items:2.2
+          
+          },
+          1200:{
+            items:1.5,
+            loop:true,
+          },
+         
       }
   })
      </script>

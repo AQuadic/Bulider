@@ -337,7 +337,7 @@ header .header_about button{
 .logos .all_img img {
 
   width: fit-content;
-  
+  height: 66px;
   margin: auto;
 }
 /*about*/
@@ -595,6 +595,7 @@ border-radius: 10px;
   width: 100%;
   object-fit: contain;
   transition: 0.7s;
+  height: 258px;
 }
 .portfolio .all_portfolio .part h3{
   margin: 0;
@@ -1127,4 +1128,10 @@ footer .copy .links_social{
   display: flex;
   align-items: center;
   gap: 20px ;
+}
+footer .copy .links_social img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+
 }

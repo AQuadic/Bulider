@@ -194,6 +194,7 @@ color: #FFFFFF;
   margin-bottom: 38px;
 }
 .flex1{
+  position: relative;
   display: flex;
 flex-direction: column;
 justify-content: center;

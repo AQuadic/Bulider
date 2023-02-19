@@ -70,6 +70,16 @@ html::-webkit-scrollbar-track{
   max-width: 1440px ;
   margin: auto;
 }
+.wave_page {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  max-height: 420px;
+  z-index: -1;
+  min-height: 190px;
+  object-fit: cover;
+}
 /*start navbar*/
 /* Remove border from toggler */
 
@@ -1135,4 +1145,210 @@ footer .copy .links_social img{
   height: 20px;
   object-fit: contain;
 
+}
+/*blog*/
+.page_blog{
+  background-color: #F6F6F6;
+  padding-bottom: 100px;
+}
+.bllog{
+  color: #FFFFFF;
+}
+.bllog h2{
+  font-size: 32px;
+line-height: 42px;
+margin-bottom: 30px;
+}
+.bllog .info_blog {
+  display: flex;
+  align-items: center;
+gap: 28px;
+flex-wrap: wrap;
+
+}
+.bllog .info_blog .part1{
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.bllog .info_blog p{
+  font-size: 16px;
+line-height: 21px;
+color: #D6D6D6;
+font-family: "Inter3";
+}
+.blog {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+.top_part{
+  margin-top: -220px;
+
+}
+.blog .part1 {
+  background: #FFFFFF;
+  padding: 46px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 660px;
+  flex-grow: 1;
+}
+.blog .part1 p{
+  font-size: 20px;
+line-height: 30px;
+}
+.blog .part2 {
+  background: #FFFFFF;
+  padding: 36px 26px;
+  min-width: 460px;
+  flex: 1;
+  height: 100%;
+}
+.blog .part2 .info_write{
+margin-bottom: 22px;
+display: flex;
+align-items: center;
+gap: 16px;
+  
+}
+.blog .part2 .info_write .person{
+width: 90px;
+height: 90px;
+border-radius: 50%;
+object-fit: contain;
+}
+.blog .part2 .info_write .info_person{
+
+}
+.blog .part2 .info_write .info_person h3{
+  font-size: 24px;
+  line-height: 31px;
+  
+}
+.blog .part2 .info_write .info_person h3 span{
+font-family: "Inter3";
+  
+
+color: #555555;
+}
+.blog .part2 .info_write .info_person h4{
+  font-size: 16px;
+line-height: 21px;
+font-family: "Inter3";
+
+
+color: #555555;
+}
+.blog .part2 p{
+  font-size: 16px;
+line-height: 25px;
+font-family: "Inter3";
+color: #656363;
+}
+@media (min-width:1440px){
+  .top_part {
+  
+    margin-top: -280px;
+}
+
+}
+@media (max-width:500px){
+  .blog .part2 {
+    
+    min-width: 100%;
+    
+}
+.blog .part1 {
+
+  padding: 46px 14px;
+  gap: 30px;
+}
+.blog .part1 p {
+  font-size: 16px;
+}
+.blog .part2 .info_write .info_person h3 {
+  font-size: 18px;
+}
+.blog .part2 .info_write .info_person h4 {
+  font-size: 14px;
+ 
+}
+.blog .part2 p {
+  font-size: 14px;
+  
+}
+}
+/*coming*/
+.coming_page{
+  background: #092532;
+  position: relative;
+}
+.coming{
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+  color: #FFFFFF;
+
+}
+.coming .logo{
+  text-align: center;
+  font-size: 36px;
+  line-height: 44px;
+font-family: "Inter";
+
+}
+.coming .about{
+text-align: center;
+}
+.coming .about h3{
+  font-size: 48px;
+line-height: 62px;
+margin-bottom: 30px;
+font-family: "Inter";
+
+}
+.coming .about h4{
+  font-size: 40px;
+line-height: 52px;
+margin-bottom: 44px;
+}
+.coming .about p{
+  font-size: 16px;
+line-height: 25px;
+text-align: center;
+color: #E2E2E2;
+max-width: 740px;
+margin: auto;
+font-family: "Inter3";
+
+}
+.coming .logo2 h5{
+  font-size: 24px;
+line-height: 29px;
+}
+.coming .img_light {
+  max-width: 100%;
+  z-index: 0;
+}
+@media (max-width:500px){
+  .coming {
+  
+    gap: 50px;
+
+}
+.coming .about h3 {
+  font-size: 42px;
+}
+
+.coming .about h4 {
+  font-size: 20px;
+
+  margin-bottom: 20px;
+}
 }

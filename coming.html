@@ -34,8 +34,10 @@
            <h1>Logo</h1>
         </div>
      <div class="about">
+     
+
         <h3>Coming Soon</h3>
-        <h4>00 days  /  00 hours  /  00 minute  /  00 seconds </h4>
+        <h4> <span class="days"></span> days  /  <span class="hours"></span> hours  /  <span class="minutes"></span> minute  /  <span class="seconds"></span> seconds </h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\</p>
      </div>
     
@@ -49,7 +51,36 @@
    
  
 
+<script>
+  // The End Of The Year Date To Countdown To
+// 1000 milliseconds = 1 Second 
+let countDownDate = new Date("Feb 25, 2023 5:00:00").getTime();
+// console.log(countDownDate);
+console.log(countDownDate)
+let counter = setInterval(() => {
+  // Get Date Now
+  let dateNow = new Date().getTime();
 
+  // Find The Date Difference Between Now And Countdown Date
+  let dateDiff = countDownDate - dateNow;
+
+  // Get Time Units
+  // let days = Math.floor(dateDiff / 1000 / 60 / 60 / 24);
+  let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((dateDiff % (1000 * 60)) / 1000);
+
+  document.querySelector(".days").innerHTML = days < 10 ? `0${days}` : days;
+  document.querySelector(".hours").innerHTML = hours < 10 ? `0${hours}` : hours;
+  document.querySelector(".minutes").innerHTML = minutes < 10 ? `0${minutes}` : minutes;
+  document.querySelector(".seconds").innerHTML = seconds < 10 ? `0${seconds}` : seconds;
+
+  if (dateDiff < 0) {
+    clearInterval(counter);
+  }
+}, 1000);
+</script>
 
 
     <script src="js/popper.min.js"></script>

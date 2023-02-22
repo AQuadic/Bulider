@@ -475,6 +475,82 @@
         </div>
       </div>
     </section>
+    <section class="container blogs ">
+      <h2 class="head_title">Latest Blogs </h2>
+        <div class="owl-carousel owl-carousel2 owl-theme2">
+          <div class="item">
+           <div class="head_img">
+            <div class="date">
+              <h4>7</h4>
+              <h5>Jun , 2022</h5>
+            </div>
+            <img src="./images/blogs1.webp" class="main_img" alt="blogs1">
+            <div class="end_head">
+              <img src="./images/pen.svg" alt="pen">
+              <p>Written by Adam</p>
+            </div>
+           </div>
+
+           <h3>Blog Name</h3>
+           <p class="dec_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+           <a href="" >Read More</a>
+          </div>
+          <div class="item">
+            <div class="head_img">
+             <div class="date">
+               <h4>7</h4>
+               <h5>Jun , 2022</h5>
+             </div>
+             <img src="./images/blogs2.webp" class="main_img" alt="blogs1">
+             <div class="end_head">
+               <img src="./images/pen.svg" alt="pen">
+               <p>Written by Adam</p>
+             </div>
+            </div>
+ 
+            <h3>Blog Name</h3>
+            <p class="dec_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <a href="" >Read More</a>
+           </div>
+           <div class="item">
+            <div class="head_img">
+             <div class="date">
+               <h4>7</h4>
+               <h5>Jun , 2022</h5>
+             </div>
+             <img src="./images/blogs3.webp" class="main_img" alt="blogs1">
+             <div class="end_head">
+               <img src="./images/pen.svg" alt="pen">
+               <p>Written by Adam</p>
+             </div>
+            </div>
+ 
+            <h3>Blog Name</h3>
+            <p class="dec_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <a href="" >Read More</a>
+           </div>
+           <div class="item">
+            <div class="head_img">
+             <div class="date">
+               <h4>7</h4>
+               <h5>Jun , 2022</h5>
+             </div>
+             <img src="./images/blogs2.webp" class="main_img" alt="blogs1">
+             <div class="end_head">
+               <img src="./images/pen.svg" alt="pen">
+               <p>Written by Adam</p>
+             </div>
+            </div>
+ 
+            <h3>Blog Name</h3>
+            <p class="dec_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <a href="" >Read More</a>
+           </div>
+        
+        </div>
+      
+    </section>
+
     <section class="contact">
       <div class="container">
         <div class="contact_info">
@@ -581,6 +657,8 @@
         </div>
       </div>
     </section>
+  
+
     <footer>
       <div class="container">
         <div class="container fotter_content">
@@ -642,10 +720,40 @@
     <script src="js/bootstrap.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script>
+       $(".owl-carousel2").owlCarousel({
+        navText: [
+        '   <img src="./images/left.webp" alt=""/> ',
+          '  <img src="./images/right.webp" alt=""/>',
+        ],
+        loop: false,
+        dots: true,
+     
+        margin: 10,
+        nav: true,
+        center: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            center: false,
+          },
+          768: {
+            items: 1.7,
+          },
+          992: {
+            items: 2.2,
+          },
+          1200: {
+            items: 3,
+            loop: true,
+          },
+        },
+      });
       $(".owl-carousel").owlCarousel({
         navText: [
           '  <img src="./images/right.webp" alt=""/>',
           '   <img src="./images/left.webp" alt=""/> ',
+          
         ],
         loop: false,
         dots: false,

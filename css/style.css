@@ -80,6 +80,32 @@ html::-webkit-scrollbar-track{
   min-height: 190px;
   object-fit: cover;
 }
+.btn-lang{
+  width: 157px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.btn-lang p{
+  font-size: 16px;
+line-height: 21px;
+font-family: "Inter";
+color: #FFFFFF;
+
+}
+.dropdown-toggle::after {
+  border: none;
+  background-image: url(../images/arrow_end.svg);
+  width: 15px;
+  height: 9px;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  margin: 0;
+}
 /*start navbar*/
 /* Remove border from toggler */
 
@@ -185,7 +211,12 @@ color: #FFFFFF;
 
 }
 @media (max-width: 992px){
+  .btn-lang {
+    
   
+    width: 80%;
+    margin: 20px auto;
+}
   .navbar-collapse{
     background-color: #7313fc;
       border-radius: 10px;
